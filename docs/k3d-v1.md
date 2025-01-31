@@ -70,13 +70,13 @@ kubectl get services --all-namespaces
 kubectl apply --dry-run=client -f ./TestScalar/deployment.yml --namespace aplicacao-canal-deploy
 ````
 
-#### aplicando no cluster
+#### Aplicando no cluster
 ````
 kubectl apply -f ./TestScalar/deployment.yml --namespace aplicacao-canal-deploy
 ````
-Port-forward - Devido ao LoadBalancer
+#### Port-forward - Devido ao LoadBalancer
 ````
-kubectl port-forward svc/canal-deploy-service -n aplicacao-canal-deploy 8000:8000
+kubectl port-forward svc/canal-deploy-service -n aplicacao-canal-deploy 8001:8000
 ````
 
 ### Listar Pods
