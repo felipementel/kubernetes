@@ -2,7 +2,7 @@ k3d cluster create canal-deploy
 
 k3d cluster delete canal-deploy
 
-kubectl config set-context --cluster=canal-deploy
+kubectl config set-context canal-deploy --cluster=k3d-canal-deploy
 
 kubectl cluster-info
 
